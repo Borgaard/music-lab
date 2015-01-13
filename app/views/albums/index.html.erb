@@ -1,0 +1,11 @@
+<h1>Articles Index</h1>
+
+  <ul>
+  	<% @albums.each do |a| %>
+  	<!-- a.title = album name && a.artist = artist name && a = id, if available -->
+  	<li><%= link_to a.artist, a %>
+  		<ul><%= a.title %></ul>
+  	</li>
+
+  	<% end %>
+  </ul>
